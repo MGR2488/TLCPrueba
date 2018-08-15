@@ -1,0 +1,2 @@
+class TlcpRuebaList < ApplicationRecord
+end

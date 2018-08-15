@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tlc Lists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tlc_lists.each do |tlc_list| %>
+      <tr>
+        <td><%= tlc_list.title %></td>
+        <td><%= tlc_list.description %></td>
+        <td><%= link_to 'Show', tlc_list %></td>
+        <td><%= link_to 'Edit', edit_tlc_list_path(tlc_list) %></td>
+        <td><%= link_to 'Destroy', tlc_list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tlc List', new_tlc_list_path %>

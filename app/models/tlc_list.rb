@@ -1,0 +1,2 @@
+class TlcList < ApplicationRecord
+end

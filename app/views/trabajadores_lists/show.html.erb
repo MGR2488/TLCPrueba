@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombres:</strong>
+  <%= @trabajadores_list.Nombres %>
+</p>
+
+<p>
+  <strong>Apellidos:</strong>
+  <%= @trabajadores_list.Apellidos %>
+</p>
+
+<div id="trabajadores_items_wrapper">
+ <%= render @trabajadores_list.trabajadores_items %>
+ 
+ <div id="form">
+  		<%= render "trabajadores_items/form" %>
+ </div>
+</div>
+
+<%= link_to 'Edit', edit_trabajadores_list_path(@trabajadores_list) %> |
+<%= link_to 'Back', trabajadores_lists_path %>

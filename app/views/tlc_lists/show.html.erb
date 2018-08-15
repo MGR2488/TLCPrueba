@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @tlc_list.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @tlc_list.description %>
+</p>
+
+<%= link_to 'Edit', edit_tlc_list_path(@tlc_list) %> |
+<%= link_to 'Back', tlc_lists_path %>

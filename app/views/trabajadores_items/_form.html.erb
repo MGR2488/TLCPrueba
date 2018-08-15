@@ -1,0 +1,4 @@
+<%= form_for([@trabajadores_list, @trabajadores_list.trabajadores_items.build]) do |f| %>
+ <%= f.text_field :content, placeholder: "Descripcion de item" %>
+ <%= f.submit %>
+<% end %>
